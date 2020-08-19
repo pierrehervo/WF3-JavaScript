@@ -1,0 +1,40 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 1em;
+  color:#333;
+}
+.container {
+  width: 800px;
+  max-width:90%;
+  margin: 0 auto;
+}
+#photo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#photo-list li {
+  padding: 1%;
+  margin:1% 0;
+}
+
+#photo-list li:hover {
+  background-color: silver;
+}
+
+#photo-list li.selected {
+  background-color: salmon;
+}
+
+#photo-list img {
+  display: block; /* Sinon il y a un petit gap sous l'image */
+}
+
+#total span {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}

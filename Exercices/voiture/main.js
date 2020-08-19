@@ -1,0 +1,21 @@
+var voiture= new Object(); 
+voiture.marque='Renault'; 
+voiture.modele='Twingo';
+voiture.couleur='Rose'; 
+voiture.immatriculation='59CLePhalempin';
+voiture.conducteur='hommecicatrice'; 
+document.write('<h1> voiture</h1>');
+document.write('<p>marque : '+voiture.marque+ '<br>Modele : '+voiture.modele+'<br>Couleur : '+voiture.couleur+ '<br>Immatriculation :' +voiture.immatriculation+ "<br>Conducteur : "+voiture.conducteur);
+
+voiture.passagers= new Array();
+voiture.passagers[0]='Jean';
+voiture.passagers[1]='Denis';
+voiture.passagers[2]='Jean-Denis';
+voiture.passagers[3]='Denis-Jean';
+document.write('<h2>Passagers</h2>');
+document.write('<ol>');
+document.write('<li>'+voiture.passagers[0] + '</li>');
+document.write('<li>'+voiture.passagers[1] + '</li>');
+document.write('<li>'+voiture.passagers[2] + '</li>');
+document.write('<li>'+voiture.passagers[3] + '</li>');
+document.write('</ol>');

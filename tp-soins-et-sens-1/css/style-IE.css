@@ -1,0 +1,83 @@
+/* Styles globaux */
+body {
+  font-family: Verdana, sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .col-left {
+    float:left;
+    margin-right:1.5%;
+  }
+  .col-right {
+    float:right;
+    margin-left:1.5%;
+  }
+  .clear {
+    clear:both;
+  }
+  #introduction article {
+    width:58%;
+  }
+  #introduction aside {
+    width:38%;
+  }
+  #prestations article {
+    display: inline-block;
+    vertical-align: top;
+    width:33.33%;
+    padding:1%;
+    box-sizing: border-box;
+  }
+  #liens article {
+    width:48%;
+  }
+  #contact article {
+    width:61.5%;
+  }
+  #contact aside {
+    width:35.5%;
+  }
+  #avisForm label {
+    display: inline-block;
+  	width:25%;
+  }
+  #avisForm input[type="text"],
+  #avisForm input[type="email"],
+  #avisForm input[type="tel"],
+  #avisForm textarea,
+  #avisForm select {
+  	display: inline-block;
+    vertical-align: top;
+  	width:60%;
+  }
+  .formulaire .note span:not(:first-child) {
+    display: inline;
+  }
+  #boutique article {
+    margin-right:1%;
+  }
+  footer .col-md-4, .mentions-legales article, #boutique article {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header nav ul li {
+    display: inline-block;
+    margin:0 3%;
+    position:relative;
+  }
+  #boutique {
+    display: flex;
+    justify-content: space-between;
+  }
+  #boutique .produits {
+    flex-basis:84%;
+  }
+  #boutique aside {
+    flex-basis:15%;
+  }
+  #newsForm input, #newsForm button {
+    display: inline-block;
+    vertical-align: top;
+    width:49%;
+  }
+}

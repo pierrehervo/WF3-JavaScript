@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutique, chèques cadeaux - Soins et Sens</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+  <header>
+    <p class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Soins et Sens Lille"></a></p>
+    <nav class="container">
+      <button class="btnHamburger"><i class="fas fa-2x fa-bars"></i></button>
+      <ul id="mainmenu" class="dropdown close">
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="apropos.html">Qui suis-je ?</a></li>
+        <li><a href="soins.html">Soins</a></li>
+        <li class="deeper"><a class="active" href="tarifs.html">Tarifs</a>
+          <ul>
+            <li><a href="tarifs.html">Soins</a></li>
+            <li><a class="active" href="boutique.html">Chèques cadeaux</a></li>
+          </ul>
+        </li>
+        <li class="deeper"><a href="avis-clients.html">Livre d'or</a>
+          <ul>
+            <li><a href="avis-clients.html">Consulter les avis</a></li>
+            <li><a href="ecrire-avis.html">Nous laisser un avis</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Me contacter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--<img class="banner" src="img/banner.jpg" alt="Soins et Sens">-->
+  <picture class="banner">
+    <source srcset="img/banner-desktop.jpg" media="(min-width: 1024px)">
+    <source srcset="img/banner-tablette.jpg" media="(min-width: 768px)">
+    <img src="img/banner-mobile.jpg" alt="Soins et Sens bien-être Lille">
+  </picture>
+  <main class="container mb30">
+    <h1>Boutique</h1>
+    <p>Pensez-y à l'occasion d'un mariage, comme cadeau de naissance ou d'anniversaire, pour la Saint-Valentin, la fête des mères ou la fête des pères, comme cadeau de Noël ou pour les fêtes de fin d'année.</p>
+    <p>Choisissez une prestation dans la boutique ci-dessous. Selon votre choix le bon cadeau est envoyé par mail ou par voie postale à l'adresse souhaitée. Le rendez-vous est pris ensuite par le bénéficiaire. Les bons cadeaux sont valables 6 mois.</p>
+    <p>Voir les <a href="#">conditions générales de vente</a>.</p>
+    <section id="boutique">
+      <div class="produits flex flexwrap space-between">
+        <h2>Les chèques cadeau</h2>
+        <article class="produit">
+          <h3>Réflexologie plantaire</h3>
+          <p><img src="img/soins/reflexologie-plantaire-300x199.jpg" alt="Chèque cadeau  réflexologie plantaire"></p>
+          <p><span class="prix-vente">50 €</span> l'unité</p>
+          <p><a class="envie" href="#boutique" title="Réflexologie plantaire"><i class="fas fa-heart"></i> Ajouter à ma liste d'envie</a></p>
+          <form iname="addtocart" method="post">
+            <input type="hidden" name="id_produit" value="1">
+            <select name="qte">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <button name="add_to_cart" data-id="1" data-name="Réflexologie plantaire" data-price="50"><i class="fas fa-cart-plus"></i></button>
+          </form>
+        </article>
+        <article class="produit">
+          <h3>Massage bien-être</h3>
+          <p><img src="img/soins/massage-californien-300x199.jpg" alt="Chèque cadeau massage bien-être"></p>
+          <p><span class="prix-vente">60 €</span> l'unité</p>
+          <p><a class="envie" href="#boutique" title="Massage bien-être"><i class="fas fa-heart"></i> Ajouter à ma liste d'envie</a></p>
+          <form name="addtocart" method="post">
+            <input type="hidden" name="id_produit" value="2">
+            <select name="qte">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <button name="add_to_cart" data-id="2" data-name="Massage bien-être" data-price="60"><i class="fas fa-cart-plus"></i></button>
+          </form>
+        </article>
+        <article class="produit">
+          <h3>Soin relaxant aux pochons</h3>
+          <p><img src="img/soins/soin-relaxant-pochon-chaud-300x199.jpg" alt="Chèque cadeau soin aux pochons"></p>
+          <p><span class="prix-vente">75 €</span> l'unité</p>
+          <p><a class="envie" href="#boutique" title="Soin relaxant aux pochons"><i class="fas fa-heart"></i> Ajouter à ma liste d'envie</a></p>
+          <form name="addtocart" method="post">
+            <input type="hidden" name="id_produit" value="3">
+            <select name="qte">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <button name="add_to_cart" data-id="3" data-name="Soin relaxant aux pochons" data-price="75"><i class="fas fa-cart-plus"></i></button>
+          </form>
+        </article>
+      </div>
+      <aside>
+        <div id="liste-envies">
+          <h2><i class="fas fa-heart"></i> Ma liste d'envies</h2>
+          <div id="liste">
+            <p class="status">La liste est vide</p>
+          </div>
+          <button class="btn btnVider" id="btnViderListe"><i class="fas fa-trash-alt"></i> Vider</button>
+        </div>
+        <div id="cart">
+          <h2><i class="fas fa-shopping-cart"></i> Mon panier</h2>
+          <div id="panier-resume">
+            <p class="status">Votre panier est vide</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    <section id="upper-footer">
+      <div class="container flex space-between">
+        <div class="col-md-4">
+          <h2>Soins &amp; Sens</h2>
+          <address>
+            <p><i class="fas fa-map-marker"></i> 6 Avenue Halley<br>59650 Villeneuve d'Ascq</p>
+            <p><i class="fas fa-envelope-open"></i> Email : <a href="mailto:info@soinsetsens.fr">info@soinsetsens.fr</a><br>
+              <i class="fas fa-phone"></i> Téléphone : <a href="tel:+33662727500">06 62 72 75 00</a></p>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h2>Navigation</h2>
+          <nav>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="apropos.html">Qui suis-je ?</a></li>
+              <li><a href="soins.html">Soins</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a class="active" href="boutique.html">Chèques cadeaux</a></li>
+              <li><a href="avis-clients.html">Livre d'or</a></li>
+              <li><a href="ecrire-avis.html">Signer le livre d'or</a></li>
+              <li><a href="contact.html">Me contacter</a></li>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <h2>Newsletter</h2>
+          <p>Pour recevoir mes actualités, abonnez-vous à la newsletter !</p>
+          <form id="newsForm" method="post" action="abonnement-newsletter.php">
+            <input type="email" name="email" value="" required placeholder="Votre email">
+            <button type="submit" value="abonnement">Abonnement</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <p class="copyright">&copy; 2019 Soins &amp; Sens - Tous droits réservés - Site réalisé par les étudiants <a href="https://www.ifocop.fr/centre-formations/villeneuve-dascq/" target="_blank">d'Ifocop</a></p>
+    <p class="top"><a href="#top"><i class="fas fa-3x fa-chevron-circle-up"></i></a></p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/sticky-nav.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/boutique.js"></script>
+</body>
+</html>

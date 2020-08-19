@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Evaluation JS</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<img src="" alt="" title="">
+			<div class="titre">
+				<h1>Bienvenue à bord</h1><br>
+				<h3>Location de voitures 24h/24 et 7j/7</h3>
+			</div>
+			<nav class="container">
+				<button class="btnHamburger"><i class="fas fa-2x fa-bars"></i></button>
+				<ul id="mainmenu" class="dropdown close">
+					<li><a href="">Louer une voitre</a></li>
+					<li><a href="">Louer un utilitaire</a></li>
+					<li><a href="">Découvrez nos agences</a></li>
+					<li><a href="">Réserver un chauffeur</a></li>
+					<li><a href="">Mon compte</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<div id="form">
+	                   <select name="adresse" id="adresse">
+	                       <option value="adresse" selected>Adresse de départ</option>
+	                       <option value="adresse">Lille</option>
+	                       <option value="adresse">Paris</option>
+	                       <option value="adresse">Nice</option>
+	                   </select>
+	                   <br>
+	                   <label for="debLoc"></label>
+	                   <input type="date" name="debLoc" id="debLoc">
+	                   	<br>
+	                   <label for="finLoc"></label>
+	                   <input type="date" name="finLoc" id="finLoc">
+
+	                   <br>
+	              		<input type="submit" value="Valider ma recherche" id="button">
+	           </form>
+	        </div>	
+		</header>
+		<main>
+			<section id="carousel">
+				<div class="une">
+					<div id="carousel-item" class="carousel-item">
+					<img src="img/vehicule1.png" alt="peugeot noir" title="voiture noire">
+					<span id="previous" title="Image précédente"><i class="fas fa-3x fa-angle-left"></i></span>
+			        <span id="next" title="Image suivante"><i class="fas fa-3x fa-angle-right"></i></span>
+		          	<p class="carousel-nav align-center"></p>
+					</div>
+					<div class="texte">
+						<h2>Peugeot 208</h2><br>
+						<p>Diesel, 5portes, autoradio, forfait 1000km (0,5km supplémentaire),</p><br>
+						<p>999€- Agence Paris</p><br>
+						<input type="submit" value="Réserver et Payer" id="button">
+					</div>
+				</div>
+
+				<div class="deux">
+					<div id="carousel-item" class="carousel-item">
+					<img src="img/vehicule2.png" alt="voiture ford" title="voiture bleu">
+					<span id="previous" title="Image précédente"><i class="fas fa-3x fa-angle-left"></i></span>
+			        <span id="next" title="Image suivante"><i class="fas fa-3x fa-angle-right"></i></span>
+		          	<p class="carousel-nav align-center"></p>
+					</div>
+					<div class="texte">
+						<h2>Ford Focus</h2><br>
+						<p>Diesel, 5portes, autoradio, forfait 1000km (0,5km supplémentaire),</p><br>
+						<p>999€- Agence Paris</p><br>
+						<input type="submit" value="Réserver et Payer" id="button">
+					</div>
+				</div>
+
+				<div class="trois">
+					<div id="carousel-item" class="carousel-item">
+					<img src="img/vehicule3.png" alt="voiture audi" title="voiture grise foncee">
+					<span id="previous" title="Image précédente"><i class="fas fa-3x fa-angle-left"></i></span>
+			        <span id="next" title="Image suivante"><i class="fas fa-3x fa-angle-right"></i></span>
+		          	<p class="carousel-nav align-center"></p>
+					</div>
+					<div class="texte">
+						<h2>Audi A1</h2><br>
+						<p>Diesel, 5portes, autoradio, forfait 1000km (0,5km supplémentaire),</p><br>
+						<p>999€- Agence Paris</p><br>
+						<input type="submit" value="Réserver et Payer" id="button">
+					</div>	
+				</div>
+
+				<div class="quatre">
+					<div id="carousel-item" class="carousel-item">
+					<img src="img/vehicule4.png" alt="voiture skoda" title="voiture grise">
+					<span id="previous" title="Image précédente"><i class="fas fa-3x fa-angle-left"></i></span>
+			        <span id="next" title="Image suivante"><i class="fas fa-3x fa-angle-right"></i></span>
+		          	<p class="carousel-nav align-center"></p>
+					</div>
+					<div class="texte">
+						<h2>Opel Mokka</h2><br>
+						<p>Diesel, 5portes, autoradio, forfait 1000km (0,5km supplémentaire),</p><br>
+						<p>999€- Agence Paris</p><br>
+						<input type="submit" value="Réserver et Payer" id="button">
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="f1">
+				<img src="img/agence.jpg" alt="wow" titre="une rue">
+			</div >
+			<div class="f2">
+				<p>Notre Agence de <strong>Paris</strong></p>
+				<p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+				<p>01 49 78 21 33</p>
+				<p>contact@vtc.com</p>
+			</div>
+		</footer>
+
+
+
+
+
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script
+  		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<script src="js/caroussel.js"></script>
+	</body>
+</html>

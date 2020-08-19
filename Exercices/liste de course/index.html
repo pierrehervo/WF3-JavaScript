@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>liste de courses</title>
+	</head>
+	<body>
+		<header>
+			<h1>Liste de Courses</h1>
+		</header>
+		<main>
+		<form method="post" action="" enctype="multipart/form-data">
+			<label for="produit">Produit:</label>
+			<input type="text" name="produit" id="prod" required placeholder="">
+		</form>
+		<form name="boutton">
+				<input type="button" name="ajouter" id="ajouter" value="ajouter">
+				<input type="button" name="trier" id="trier" value="trier">
+				<input type="button" name="supprimer" id="supprimer" value="supprimer">
+				<input type="button" name="vider" id="vider" value="vider">
+
+			</form>
+		<h2>Liste des produits</h2>
+		<div id="zone"></div>
+		</main>
+
+		<script src="main.js"></script>
+	</body>
+</html>

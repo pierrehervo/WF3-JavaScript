@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Signer le livre d'or - Soins et Sens</title>
+  <meta name="description" content="Vous avez bénéficié d'un soin de bienêtre chez Soins et Sens ? Laissez-nous votre avis.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+  <header>
+    <p class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Soins et Sens Lille"></a></p>
+    <nav class="container">
+      <button class="btnHamburger"><i class="fas fa-2x fa-bars"></i></button>
+      <ul id="mainmenu" class="dropdown close">
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="apropos.html">Qui suis-je ?</a></li>
+        <li><a href="soins.html">Soins</a></li>
+        <li class="deeper"><a href="tarifs.html">Tarifs</a>
+          <ul>
+            <li><a href="tarifs.html">Soins</a></li>
+            <li><a href="boutique.html">Chèques cadeaux</a></li>
+          </ul>
+        </li>
+        <li class="deeper"><a class="active" href="avis-clients.html">Livre d'or</a>
+          <ul>
+            <li><a href="avis-clients.html">Consulter les avis</a></li>
+            <li><a class="active" href="ecrire-avis.html">Nous laisser un avis</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Me contacter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--<img class="banner" src="img/banner.jpg" alt="Soins et Sens">-->
+  <picture class="banner">
+    <source srcset="img/banner-desktop.jpg" media="(min-width: 1024px)">
+    <source srcset="img/banner-tablette.jpg" media="(min-width: 768px)">
+    <img src="img/banner-mobile.jpg" alt="Soins et Sens bien-être Lille">
+  </picture>
+  <main class="container mb30">
+    <h1>Signer le livre d'or de Soins &amp; Sens</h1>
+    <p>Votre avis sera publié après validation par le modérateur du site.</p>
+    <form class="formulaire" id="avisForm" method="post" action="action.php">
+      <p><span class="required">(*)</span> Champs obligatoires</p>
+      <p>
+        <label for="titre">Titre <span class="required">*</span></label>
+        <input id="titre" name="titre" minlength="10" maxlength="100" type="text" value="" required>
+      </p>
+      <p>
+        <label for="nom">Nom <span class="required">*</span></label>
+        <input id="nom" name="nom" minlength="2" maxlength="100" type="text" value="" required>
+      </p>
+      <p>
+        <label for="email">Email <span class="required">*</span></label>
+        <input id="email" name="email" minlength="5" maxlength="100" type="email" value="" required>
+      </p>
+      <p class="note">
+        <label>Note <span class="required">*</span></label>
+        <span><input type="radio" class="note" name="note" value="1"> Horrible</span>
+        <span><input type="radio" class="note" name="note" value="2"> Médiocre</span>
+        <span><input type="radio" class="note" name="note" value="3"> Moyen</span>
+        <span><input type="radio" class="note" name="note" value="4"> Très bien</span>
+        <span><input type="radio" class="note" name="note" value="5"> Excellent</span>
+      </p>
+      <p>
+        <label for="message">Votre avis&nbsp;<span class="required">*</span></label>
+        <textarea id="message" name="message" required></textarea>
+      </p>
+      <p class="rgpd">
+        <input id="rgpd" name="rgpd" type="checkbox" value="1"> <span class="required">*</span>
+        <label for="rgpd">En soumettant cet avis, j'accepte la <a href="politique-de-confidentialite.html" target="_blank">politique de confidentialité</a> du site ; j'accepte que cette publication soit lisible avec mon nom, ma note et la date sur la page du livre d'or de ce site.</label>
+      </p>
+      <p class="align-center"><button class="btn" type="submit" value="Envoyer"><i class="fa fa-paper-plane" aria-hidden="true"></i> Envoyer</button></p>
+    </form>
+  </main>
+  <footer>
+    <section id="upper-footer">
+      <div class="container flex space-between">
+        <div class="col-md-4">
+          <h2>Soins &amp; Sens</h2>
+          <address>
+            <p><i class="fas fa-map-marker"></i> 6 Avenue Halley<br>59650 Villeneuve d'Ascq</p>
+            <p><i class="fas fa-envelope-open"></i> Email : <a href="mailto:info@soinsetsens.fr">info@soinsetsens.fr</a><br>
+            <i class="fas fa-phone"></i> Téléphone : <a href="tel:+33662727500">06 62 72 75 00</a></p>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h2>Navigation</h2>
+          <nav>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="apropos.html">Qui suis-je ?</a></li>
+              <li><a href="soins.html">Soins</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="boutique.html">Chèques cadeaux</a></li>
+              <li><a href="avis-clients.html">Livre d'or</a></li>
+              <li><a class="active" href="ecrire-avis.html">Signer le livre d'or</a></li>
+              <li><a href="contact.html">Me contacter</a></li>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <h2>Newsletter</h2>
+          <p>Pour recevoir mes actualités, abonnez-vous à la newsletter !</p>
+          <form id="newsForm" method="post" action="abonnement-newsletter.php">
+            <input type="email" name="email" value="" required placeholder="Votre email">
+            <button type="submit" value="abonnement">Abonnement</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <p class="copyright">&copy; 2019 Soins &amp; Sens - Tous droits réservés - Site réalisé par les étudiants <a href="https://www.ifocop.fr/centre-formations/villeneuve-dascq/" target="_blank">d'Ifocop</a></p>
+    <p class="top"><a href="#top"><i class="fas fa-3x fa-chevron-circle-up"></i></a></p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/sticky-nav.js"></script>
+  <script src="js/hamburger.js"></script>
+</body>
+</html>

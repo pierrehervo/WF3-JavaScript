@@ -1,0 +1,150 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*===== HEADER =====*/
+header{
+	/*display:flex;*/
+	width:100%;
+	height: 886px;
+	background: url("img/background.jpg") center, center;
+}
+header .titre{
+	margin: 0 auto;
+	padding-top: 50px;
+}
+header .titre h1, h3{
+color:white;
+text-align: center;
+}
+header .titre h1{
+	font-size: 45px;
+}
+
+/* ===== MENU HAMBURGER =====*/
+header nav {
+	position: fixed;
+  	text-align: center;
+  	padding: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav li {
+  text-align: center;
+}
+header nav .btnHamburger {
+	display: flex;
+	justify-content: flex-s;
+	border: 1px solid grey;
+  	background-color: transparent;
+  	padding: 10px 15px;
+ 	border-radius: 6px;
+  	margin: 10px 0;
+}
+header nav .btnHamburger .fas {
+  color: grey;
+}
+
+header nav ul.close {
+  display: none;
+}
+
+header nav ul.open {
+  display: block;
+}
+header nav a {
+  color: grey;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+header nav a:hover {
+  color: grey;
+  background-color: white;
+}
+
+/* ===== Menu INPUT =====*/
+#form{
+	display: flex;
+	justify-content: space-around;
+	width: 650px;
+	height: 30px;
+	position: relative;
+    right: -482px;
+    top: 536px;
+	background-color: grey;
+	opacity: 0.7;
+
+}
+#form #button{
+	background-color: green;
+}
+/* ===== MAIN =====*/
+section{
+	max-width: 960px;
+	margin: 0 auto;
+}
+section .une, .deux, .trois, .quatre{
+	display: flex;
+	margin: 20px;
+}
+main #button{
+	width:120px;
+	height: 35px;
+	background-color: green;
+	color: white;
+	border: 1px solid green;
+	border-radius: 15%;
+}
+/* =======CAROUSSEL ========*/
+.carousel-item {
+  position: relative;
+  z-index: 5;
+  -webkit-backface-visibility: hidden;
+  /* obligatoire pour éviter l'effet de crénelage sous Chrome */
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.carousel-item img {
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+#carousel .fas {
+  color: black;
+}
+
+#carousel #previous, #carousel #next {
+  position: absolute;
+  top: 43%;
+}
+
+#carousel #previous {
+  left: 5px;
+}
+
+#carousel #next {
+  right: 5px;
+}
+
+/* ===== FOOTER ====*/
+footer{
+	max-width: 960px;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-around;
+}
+footer img{
+	width:150px;
+	height: 150px;
+}

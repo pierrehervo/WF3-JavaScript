@@ -1,0 +1,560 @@
+/* Styles globaux */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size:1rem;
+  line-height: 1.6;
+  color:#777;
+  margin:0;
+}
+.align-left {
+	text-align:left;
+}
+.align-center {
+	text-align:center;
+}
+.align-right {
+	text-align:right;
+}
+.important {
+  color:#CC0000;
+  text-align:center;
+}
+.required {
+	color:#CC0000;
+}
+.mb30 {
+  margin-bottom:30px;
+}
+a {
+  text-decoration:none;
+  color:#0000CC;
+}
+img {
+  max-width:100%;
+  height: auto;
+  border:none;
+}
+.img-rounded {
+  border-radius: 50%;
+}
+h1, h2, h3, header nav {
+  font-family: 'Bree Serif', serif;
+  font-weight: normal;
+}
+h1, h2, h3 {
+  color:#DD8B0C;
+  text-align: left;
+}
+h1 {
+  font-size:2.8em;
+  line-height: 1.4;
+}
+h2 {
+  font-size:1.8em;
+  line-height: 1.3;
+}
+h3 {
+  font-size:1.2em;
+  line-height: 1.2;
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  background-color: #DD8B0C;
+  color:#FFF;
+  border:0;
+  padding:6px 20px;
+	font-size:1.2em;
+  border-radius: 6px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+nav ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+/* Largeur des contenus */
+.container {
+  width:90%;
+  margin-left:auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width:96%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width:1200px;
+  }
+}
+/* Styles du HEADER */
+.logo {
+  text-align: center;
+}
+.logo a:hover {
+  opacity:0.8;
+}
+header {
+  padding:20px 5%;;
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding:0;
+  }
+}
+header nav {
+  text-align: center;
+  padding:0;
+}
+header nav.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color: #FFF;
+  border-bottom:1px solid #DD8B0C;
+  z-index:20;
+}
+header nav li {
+  text-align: center;
+}
+header nav .btnHamburger {
+  border:1px solid #DD8B0C;
+  background-color: #FFF;
+  padding:10px 15px;
+  border-radius:6px;
+  margin:10px 0;
+}
+header nav .btnHamburger .fas {
+  color:#DD8B0C;
+}
+@media screen and (min-width: 1024px) {
+  header nav .btnHamburger {
+    display: none;
+  }
+}
+header nav ul.close {
+  display: none;
+}
+header nav ul.open {
+  display: block;
+}
+header nav ul ul {
+  display: none;
+  background-color: #FFF;
+}
+header nav li.open:hover ul {
+  display: block;
+}
+header nav a {
+  color:#DD8B0C;
+  font-size:1.2em;
+  display: block;
+  width: 100%;
+  transition:All 1s ease-in-out;
+  padding:8px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  header nav a {
+    padding:10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header nav a {
+    font-size:1.4em;
+    padding:15px 20px;
+  }
+}
+header nav a:hover, header nav a.active {
+  color:#824C19;
+}
+/* On ajoute le caractère angle-down de Font Awesome pour indiquer le sous-menu de niveau 2 */
+header nav li.deeper a {
+	position: relative;
+}
+header nav li.deeper > a::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+	content: " \f107";
+	margin-left:1px;
+}
+header nav li li a {
+  padding:10px 20px;
+}
+/* Styles du MAIN */
+main {
+  text-align: justify;
+  min-height: 420px;
+}
+main section {
+  margin-top:30px;
+  margin-bottom:30px;
+}
+main .fas {
+  color:#DD8B0C;
+}
+/** Page d'accueil **/
+#promo {
+  background: #DD8B0C url('../img/fond-promo.jpg') no-repeat left top;
+  color:#FFF;
+  font-size:1.8em;
+  text-align: center;
+  padding:2% 4%;
+  text-shadow: 2px 2px #333;
+}
+#promo h2 {
+  color:#FFF;
+  text-align: center;
+}
+#promo p {
+  line-height: 1.2em;
+}
+#prestations h2, #prestations h3 {
+  text-align: center;
+}
+#prestations a.readmore {
+  background-color:#DD8B0C;
+  color:#FFFFFF;
+  padding:8px 15px;
+  border-radius:5px;
+  transition:All 1s ease;
+}
+#prestations a.readmore:hover {
+  background-color:#FFFFFF;
+  color:#DD8B0C;
+  border:1px solid #DD8B0C;
+}
+#prestations a.readmore .fas {
+  color:#FFFFFF;
+}
+#prestations a.readmore:hover .fas {
+  color:#DD8B0C;
+}
+#presentation p:first-of-type {
+  text-align: center;
+}
+hr {
+  height: 2px;
+  color: #DD8B0C;
+  background-color: #DD8B0C;
+  width: 96%;
+  border: none;
+}
+#map {
+  margin-bottom:0;
+}
+#map iframe {
+  width: 100%;
+  height:400px;
+  border:0;
+}
+/** Page tarifs **/
+.new {
+  color:#CC0000;
+  font-size:0.8em;
+}
+table {
+  border-collapse:collapse;
+}
+table.tarifs {
+  font-size:0.9em;
+  text-align: left;
+}
+table tbody tr:nth-child(odd) {
+  background-color:#FFE6BE;
+}
+table th:first-child {
+  width:60%;
+}
+th, td {
+   padding:4px 8px;
+   border:1px solid #DD8B0C;
+}
+th {
+  color:#DD8B0C;
+}
+/** Page boutique **/
+#boutique .produit {
+  text-align: center;
+}
+#boutique h3 {
+  font-size:1em;
+  text-align: center;
+}
+#boutique .liste {
+  padding-left:20px;
+}
+#boutique .status {
+  font-style: italic;
+  color:blue;
+}
+#boutique aside h2 {
+  font-size:1.2em;
+}
+a.envie {
+  color:#CC0000;
+  cursor:pointer;
+}
+a.envie .fas {
+  color:inherit;
+}
+#cart .fa-times-circle {
+  color:#CC0000;
+}
+.btnVider {
+  background-color:#CC0000;
+  cursor:pointer;
+}
+.btnPayer {
+  background-color:#00CC00;
+  cursor:pointer;
+}
+.btnVider .fas, .btnPayer .fas {
+  color:#FFF;
+}
+#btnViderListe, #btnPanier {
+  display: none;
+}
+
+/** Page contact */
+#contactForm label, #contactForm input, #contactForm textarea {
+	display:block;
+}
+.formulaire p {
+  margin-top:0;
+  margin-bottom:6px;
+}
+.formulaire label,
+.formulaire input[type="text"],
+.formulaire input[type="email"],
+.formulaire input[type="tel"],
+.formulaire textarea,
+.formulaire select {
+  display:block;
+  width:90%;
+	padding:5px;
+}
+.formulaire .note span:not(:first-child) {
+  display: block;
+}
+.formulaire .rgpd input, .formulaire .rgpd label {
+  display: inline !important;
+  width: auto;
+  vertical-align: middle;
+}
+#contactForm .rgpd input {
+  margin-right:3px;
+}
+.formulaire .fas {
+  color:#FFF;
+}
+/** Page livre d'or **/
+.fa-star {
+  color:gold;
+}
+/* Styles du FOOTER */
+footer, footer h2, footer nav {
+  text-align:left;
+}
+#upper-footer {
+  background-color:#DD8B0C;
+  color:#FFF;
+  padding-top:30px;
+  padding-bottom:30px;
+  margin-bottom:0;
+}
+#upper-footer h2 {
+  margin-top: 0;
+}
+#upper-footer h2, #upper-footer .fas {
+  color:#FFF;
+}
+footer a {
+  color:inherit;
+}
+footer nav a:hover, footer nav a.active {
+  text-decoration: underline;
+}
+footer .copyright {
+  text-align: center;
+  color:#DD8B0C;
+  padding:0 2%;
+}
+footer .top {
+    display:none;
+}
+footer .top a {
+    position:fixed;
+    right:35px;
+    bottom:20px;
+    z-index:10000;
+}
+#newsForm input, #newsForm button {
+  display: block;
+  width: 100%;
+}
+#newsForm input {
+  padding:6px;
+  box-sizing: border-box;
+  margin-bottom:10px;
+}
+#newsForm button {
+  background-color:#FFFFFF;
+  color:#DD8B0C;
+  border:0;
+  padding:8px 20px;
+  box-sizing: border-box;
+  border-radius:6px;
+  font-size:1em;
+}
+@media screen and (min-width: 768px) {
+  .float-left {
+    float:left;
+    margin-right:1.5%;
+  }
+  .float-right {
+    float:right;
+    margin-left:1.5%;
+  }
+  .clear {
+    clear:both;
+  }
+  .clearfix:before,
+  .clearfix:after {
+      content: " ";
+      display: table;
+  }
+  .clearfix:after {
+      clear: both;
+  }
+  /* Pour IE 6/7 */
+  .clearfix {
+      *zoom: 1;
+  }
+  #introduction article {
+    flex-basis:61%;
+  }
+  #introduction aside {
+    flex-basis:35%;
+  }
+  #promo {
+    font-size:2em;
+  }
+  #prestations article {
+    flex-basis:31%;
+  }
+  #liens article {
+    flex-basis:48%;
+  }
+  #contact article {
+    flex-basis:62%;
+  }
+  #contact aside {
+    flex-basis:35%;
+  }
+  table.tarifs {
+    width:60%;
+    margin:0 auto;
+  }
+  th, td {
+     padding:5px 10px;
+  }
+  #avisForm label {
+    display: inline-block;
+  	width:25%;
+  }
+  #avisForm input[type="text"],
+  #avisForm input[type="email"],
+  #avisForm input[type="tel"],
+  #avisForm textarea,
+  #avisForm select {
+  	display: inline-block;
+    vertical-align: top;
+  	width:60%;
+  }
+  .formulaire .note span {
+    padding-right:5px;
+  }
+  .formulaire .note span:not(:first-child) {
+    display: inline;
+  }
+  .formulaire input[type="text"],
+  .formulaire input[type="email"],
+  .formulaire input[type="tel"],
+  .formulaire textarea,
+  .formulaire select {
+  	width:60%;
+  }
+  .formulaire input[type="tel"] {
+  	width:200px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flexwrap {
+    flex-wrap: wrap;
+  }
+  .flexwrap h1, .flexwrap h2 {
+    flex-basis:100%;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  #boutique article {
+    margin-right:1%;
+  }
+  footer .col-md-4, .mentions-legales article, #boutique article {
+    flex-basis: 30%;
+  }
+}
+@media screen and (max-width:1023px) {
+  nav ul ul {
+    font-size:0.9em;
+    font-style: italic;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header nav ul.dropdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+  }
+  header nav ul ul {
+    position: absolute;
+    z-index:10;
+    /*border-color:#DD8B0C;
+    border-width:1px;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-bottom-style:solid;*/
+    border-radius:0 0 8px 8px;
+  }
+  header nav li li {
+    text-align:left;
+  }
+  header nav li li {
+    border-top:1px dashed #DD8B0C;
+  }
+  #boutique {
+    display: flex;
+    justify-content: space-between;
+  }
+  #boutique .produits {
+    flex-basis:79%;
+  }
+  #boutique aside {
+    flex-basis:20%;
+  }
+  #newsForm input, #newsForm button {
+    display: inline-block;
+    vertical-align: top;
+    width:49%;
+  }
+}
